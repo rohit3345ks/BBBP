@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Start Event Sheet</name>
+    <events>
+        <variable constant="0" name="music" sid="758557730126583" static="0" type="text">on</variable>
+        <variable constant="0" name="sound" sid="294002875166161" static="0" type="text">on</variable>
+        <event-block sid="660762689536190">
+            <conditions>
+                <condition id="17" name="On tap object" sid="874313797261730" type="Touch">
+                    <param id="0" name="Object">homestart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="609794202394306" type="homestart">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="372778803058356" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="969605973097327" type="System">
+                    <param id="0" name="Layout">Story Layout</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="333708871124240">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="751570766127924" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="618259606918979" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="151856036360853">
+            <conditions>
+                <condition id="17" name="On tap object" sid="784915283502957" type="Touch">
+                    <param id="0" name="Object">homeplay</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="119281024766840" type="homeplay">
+                    <param id="0" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="386264506343253" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="184673175874906" type="System">
+                    <param id="0" name="Layout">Levels Layout</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="943978336400732">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="503364949296642" type="System">
+                            <param id="0" name="Variable">sound</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="100125995215251" type="Audio">
+                            <param id="0" name="Audio file">click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

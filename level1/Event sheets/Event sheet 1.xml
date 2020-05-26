@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="119436232967817">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="137896756864242" type="characterlady" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="433956201926321" type="characterlady">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="315296446968502">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="932830924681744" type="characterlady" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="796294451011579" type="characterlady">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="758872553595879">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="255552485810725" type="characterlady" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="806865834561598" type="characterlady">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="773693209282569">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="187791534384559" type="characterlady" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="926497061544514" type="characterlady">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="172430368159778">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="433668027022223" type="characterlady" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="277284566661070" type="characterlady">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="785444195432950">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="464389829123727" type="characterlady" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="722849354728023" type="characterlady">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="851723224351316">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="612443029269220" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="136303677766237" type="characterlady">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="827267210349642">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="583258012402308" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="568802844500165" type="characterlady">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="821019013086376">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="518699200418780" type="adult_enemy">
+                    <param id="0" name="Object">characterlady</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="793447727881797" type="adult_enemy">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">3.0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="418227311248778">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="281501227417702" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="962333370123479" type="characterlady">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

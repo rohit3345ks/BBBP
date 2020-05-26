@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2layout>
+    <name>Story Layout</name>
+    <sid>828532030843901</sid>
+    <event-sheet>Story Event Sheet</event-sheet>
+    <size>
+        <width>1708</width>
+        <height>640</height>
+    </size>
+    <margins>
+        <horizontal>500</horizontal>
+        <vertical>500</vertical>
+    </margins>
+    <unbounded-scrolling>0</unbounded-scrolling>
+    <layers>
+        <layer name="Layer 0" sid="839547154752087">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="set4_background" uid="4">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>1138</width>
+                        <height>640</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="WindowCopy_2" uid="5">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>560</x>
+                        <y>250.840744019</y>
+                        <z>0</z>
+                        <width>1005</width>
+                        <height>432</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50082916</hotspotX>
+                        <hotspotY>0.501170933</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFont5" uid="7">
+                    <properties>
+                        <character-width>23</character-width>
+                        <character-height>25</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>The text will appear here.</text>
+                        <scale>1</scale>
+                        <initial-visibility>Visible</initial-visibility>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,16,1],&quot;&quot;data&quot;&quot;:[[[8],[3],[4],[5],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[18],[21]],[[&quot;&quot; &quot;&quot;],[&quot;&quot;l:&apos;|&quot;&quot;],[&quot;&quot;i.,!&quot;&quot;],[&quot;&quot;;`&quot;&quot;],[&quot;&quot;[]&quot;&quot;],[&quot;&quot;j1-\&quot;&quot;()°&lt;&quot;&quot;],[&quot;&quot;s=&gt;&quot;&quot;],[&quot;&quot;cfhkoqrtuv3\\/+*&quot;&quot;],[&quot;&quot;FIKLPadegnpyz26?&quot;&quot;],[&quot;&quot;BERbx04589~$&quot;&quot;],[&quot;&quot;ACDV7&amp;&quot;&quot;],[&quot;&quot;GHJSUXYZw&quot;&quot;],[&quot;&quot;T_£€&quot;&quot;],[&quot;&quot;NOm%&quot;&quot;],[&quot;&quot;MQ#@&quot;&quot;],[&quot;&quot;W&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <instance-variables>
+                        <sText>Hi Gamer! Today&apos;s world is a place where women are given an equal place as men. But you know what? My family tested my baby&apos;s gender against law and now they want my baby girl to get killed even before she steps into the world..I am struggling to save my child. BUT BUT BUT i will not loose hope because i know i have the power to fight for my child....This is reality, a sad reality... Welcome to the game world where you can change something.</sText>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Timer" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>138</x>
+                        <y>142</y>
+                        <z>0</z>
+                        <width>831</width>
+                        <height>235</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="homeplay" uid="8">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>1</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <next>false</next>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>534</x>
+                        <y>543</y>
+                        <z>0</z>
+                        <width>208</width>
+                        <height>88</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="SpriteFontLevel1" uid="20">
+                    <properties>
+                        <character-width>55</character-width>
+                        <character-height>60</character-height>
+                        <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
+                        <text>Play</text>
+                        <scale>1</scale>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <character-spacing>0</character-spacing>
+                        <line-height>0</line-height>
+                        <char-width-json>{&quot;&quot;c2array&quot;&quot;:true,&quot;&quot;size&quot;&quot;:[2,29,1],&quot;&quot;data&quot;&quot;:[[[13],[15],[16],[17],[18],[19],[20],[22],[23],[24],[25],[27],[29],[30],[31],[32],[33],[34],[35],[36],[37],[38],[40],[42],[43],[44],[46],[49],[53]],[[&quot;&quot;|&quot;&quot;],[&quot;&quot;Iijl!&quot;&quot;],[&quot;&quot;.:&quot;&quot;],[&quot;&quot;(°&quot;&quot;],[&quot;&quot;)&quot;&quot;],[&quot;&quot;,;&apos;&quot;&quot;],[&quot;&quot;[]&quot;&quot;],[&quot;&quot;1`&quot;&quot;],[&quot;&quot;\&quot;&quot;&quot;&quot;],[&quot;&quot;r&quot;&quot;],[&quot;&quot;ft-*&quot;&quot;],[&quot;&quot;EFJLs&quot;&quot;],[&quot;&quot;\\/&quot;&quot;],[&quot;&quot;c&quot;&quot;],[&quot;&quot;hknuvyz25?&quot;&quot;],[&quot;&quot;ST37~#€&quot;&quot;],[&quot;&quot;BPRbpx689$&quot;&quot;],[&quot;&quot;adegoq&lt;&gt;&quot;&quot;],[&quot;&quot;CKYZ_&quot;&quot;],[&quot;&quot;0+=&quot;&quot;],[&quot;&quot;DVX&quot;&quot;],[&quot;&quot;AHNU4£&quot;&quot;],[&quot;&quot;G&amp;&quot;&quot;],[&quot;&quot;O&quot;&quot;],[&quot;&quot;Q&quot;&quot;],[&quot;&quot;@&quot;&quot;],[&quot;&quot;mw&quot;&quot;],[&quot;&quot;M&quot;&quot;],[&quot;&quot;W&quot;&quot;]]]}</char-width-json>
+                        <space-char-width>-1</space-char-width>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>461</x>
+                        <y>509</y>
+                        <z>0</z>
+                        <width>154</width>
+                        <height>73</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+    </layers>
+    <nonworld-instances />
+    <effects />
+</c2layout>

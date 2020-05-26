@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>2</name>
+    <events>
+        <variable constant="0" name="gem" sid="608141691005189" static="0" type="number">0</variable>
+        <event-block sid="778483505542288">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="203875659521800" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="445632011071700" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="gem2" sid="756389577751554" static="0" type="number">0</variable>
+        <event-block sid="792243438574877">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="266853731040276" type="playerRed_Stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="388426162149074" type="playerRed_Stand">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="914230317157407">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="829433317904791" type="playerRed_Stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="607877390584205" type="playerRed_Stand">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="969751662560495">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="270403376961856" type="playerRed_Stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="352970177885668" type="playerRed_Stand">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="311952868143973">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="383396294120377" type="playerRed_Stand" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="783127012818029">
+            <conditions>
+                <condition behavior="Platform" id="0" name="Is moving" sid="467761729095068" type="playerRed_Stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="467552265913775" type="playerRed_Stand">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="404669386075554">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="577352294951274" type="playerRed_Stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="703321597669291" type="playerRed_Stand">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="261522729325859">
+            <conditions>
+                <condition behavior="Platform" id="6" name="On fall" sid="533839938077351" type="playerRed_Stand" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="262355594540132" type="playerRed_Stand">
+                    <param id="0" name="Animation">&quot;Fall&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="436646024323788">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="131808953644355" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="136843031482472" type="playerRed_Stand">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="700133202773401">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="576075654400364" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="991400376265480" type="playerRed_Stand">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="638365532552073">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="588898723573287" type="playerRed_Stand">
+                    <param id="0" name="Object">enemyFloating_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="296393282759259" type="playerRed_Stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="328319910934227" type="playerRed_Stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="653993431276632">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="102539787023839" type="playerRed_Stand">
+                    <param id="0" name="Object">enemyFlying_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="187135505622686" type="playerRed_Stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="338290062521929" type="playerRed_Stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="549572239323162">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="170278619891890" type="playerRed_Stand">
+                    <param id="0" name="Object">enemyWalking_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="105989232120055" type="playerRed_Stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="519691334623305" type="playerRed_Stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="464518289858806">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="757443518515252" type="enemyWalking_">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="934262035424721" type="enemyWalking_">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="428463827296366">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="650901823655686" type="enemyWalking_">
+                    <param id="0" name="Side">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="966795910456240" type="enemyWalking_">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Value">&quot;left&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="110375244242141">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="521484025098053" type="enemyWalking_">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="681725657882175" type="enemyWalking_">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="701105182446292">
+            <conditions>
+                <condition behavior="Platform" id="10" name="Is by wall" sid="250272438173058" type="enemyWalking_">
+                    <param id="0" name="Side">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="123272863388647" type="enemyWalking_">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Value">&quot;Right&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="632570294724035">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="917625611987258" type="playerRed_Stand">
+                    <param id="0" name="Object">enemySwimming_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="542491075056654" type="playerRed_Stand">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="764598083391143" type="playerRed_Stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="230892944132889">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="283683987131046" type="enemySwimming_" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="140781008952098">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="978823919153239" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="730640367395803" type="enemySwimming_">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="716212110274185">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="264606913336234" type="playerRed_Stand">
+                    <param id="0" name="Object">Gems</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="551384020613387" type="Gems" />
+                <action id="-10" name="Add to" sid="567585015541833" type="System">
+                    <param id="0" name="Variable">gem</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="297701740952538">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="507019233405852" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="121713431401278">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="701998518376213" type="SpriteFont3">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;gem&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="923875151323026" type="SpriteFont3">
+                            <param id="0" name="Text">gem</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="386081880026992">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="850207744065620" type="SpriteFont3">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;heart&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="431230880281774" type="SpriteFont3">
+                    <param id="0" name="Text">playerRed_Stand.heart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="830771315747730">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="858341534216832" type="playerRed_Stand">
+                    <param id="0" name="Instance variable">heart</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="405255650461756">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="279468904467724" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="127585099137782" type="playerRed_Stand">
+                            <param id="0" name="Animation">&quot;Dead&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="286396089954101" type="playerRed_Stand">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="856288107193996" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="541602249241412" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
