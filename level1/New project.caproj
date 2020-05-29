@@ -325,24 +325,13 @@
                 <behavior-type name="Platform" sid="832199012972399">
                     <behavior id="Platform" />
                 </behavior-type>
-                <behavior-type name="ScrollTo" sid="225415608691229">
+                <behavior-type name="ScrollTo" sid="871128767445365">
                     <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="257862710529994" speed="8">
-                    <frame duration="1" hotspotX="0.504587" hotspotY="1" original-source="D:\Assets\characterlady2 (2).png">
-                        <collision-poly>
-                            <point x="0.247706" y="0.0967742" />
-                            <point x="0.495413" y="0" />
-                            <point x="0.678899" y="0.125448" />
-                            <point x="0.981651" y="0.498208" />
-                            <point x="0.761468" y="0.90681" />
-                            <point x="0.495413" y="0.856631" />
-                            <point x="0.119266" y="0.953405" />
-                            <point x="0.119266" y="0.498208" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.504587" hotspotY="1" original-source="C:\Users\vaio\Desktop\BBBP\Images\ladystand.png" />
                 </animation>
                 <animation framecount="2" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="985589682250618" speed="8">
                     <frame duration="1" hotspotX="0.504587" hotspotY="1" original-source="D:\Assets\characterlady2pose3.png" />
@@ -590,6 +579,290 @@
         </object-type>
         <object-type name="Audio" sid="486422676077556">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="tileGreen_24" sid="313581852364821">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373216938701881" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_26.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.08" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953125" y="0.94" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.046875" y="0.94" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_25" sid="442023670680110">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573591329841981" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_27.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953125" y="0.94" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.046875" y="0.94" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_26" sid="721822384030564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="147297571091405">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141361600293680" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_02.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.08" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.08" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953125" y="0.94" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.046875" y="0.94" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_27" sid="923955886496517">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="673479793190419" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_01.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.08" />
+                            <point x="1" y="0.5" />
+                            <point x="0.953125" y="0.94" />
+                            <point x="0.5" y="0.86" />
+                            <point x="0.046875" y="0.94" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_28" sid="300896630652744">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382356444948594" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_29" sid="802232881693312">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730410049854350" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_03.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_30" sid="854290385231184">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="926914949661285">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="928872774167701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_31" sid="580577250202354">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="945739740608142">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641534788214189" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_32" sid="716009052652547">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="722339313533672">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667869692883474" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_33" sid="258936867428475">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="891788277200625" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_09.png">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_34" sid="942022337866858">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378281823409478" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_10.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.515625" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_35" sid="601304674741262">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="822402665135106">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729958927410384" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_11.png">
+                        <collision-poly>
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_36" sid="811164102965852">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="761209272614717">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="110265740832510" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_12.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.515625" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_37" sid="740951462591030">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="392280004087383">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869921306370597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_08.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_38" sid="580761689949995">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="126330219617249">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="594733090293062" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_04.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileGreen_39" sid="631198153439165">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="347689931240373">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="539680229529051" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
