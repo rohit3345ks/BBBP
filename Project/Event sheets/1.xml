@@ -3,94 +3,841 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>1</name>
     <events>
-        <event-block sid="167135136727669">
+        <variable constant="0" name="Music1" sid="626731305405724" static="0" type="text">&quot;on&quot;</variable>
+        <variable constant="0" name="PlayerHeart" sid="560081260052591" static="0" type="number">3</variable>
+        <variable constant="0" name="Sound1" sid="618020597159314" static="0" type="text">on</variable>
+        <variable constant="0" name="Ge" sid="421943868080903" static="0" type="number">0</variable>
+        <event-block sid="732224917902807">
             <conditions>
-                <condition behavior="Platform" id="8" name="On moved" sid="652353580227021" type="charlady" />
+                <condition id="-2" name="On start of layout" sid="948877070617378" type="System" />
             </conditions>
             <actions>
-                <action id="4" name="Set animation" sid="773010547443071" type="charlady">
-                    <param id="0" name="Animation">&quot;Walk&quot;</param>
-                    <param id="1" name="From">1</param>
+                <action id="-4" name="Set layer visible" sid="409095325783564" type="System">
+                    <param id="0" name="Layer">&quot;Popups&quot;</param>
+                    <param id="1" name="Visibility">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="697361626856804">
-            <conditions>
-                <condition behavior="Platform" id="7" name="On stopped" sid="680456179166292" type="charlady" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="681625208091165" type="charlady">
-                    <param id="0" name="Animation">&quot;Stand&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="790736880532121">
-            <conditions>
-                <condition behavior="Platform" id="5" name="On jump" sid="100805721798478" type="charlady" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="121088195495857" type="charlady">
-                    <param id="0" name="Animation">&quot;Jump&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="919193177283698">
-            <conditions>
-                <condition behavior="Platform" id="9" name="On landed" sid="691476382233921" type="charlady" />
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="261467635972637" type="charlady">
-                    <param id="0" name="Animation">&quot;Stand&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
+                <action id="33" name="Stop all" sid="409230035245560" type="Audio" />
             </actions>
             <sub-events>
-                <event-block sid="829791061967152">
+                <event-block sid="467536227325124">
                     <conditions>
-                        <condition behavior="Platform" id="0" name="Is moving" sid="235463762341093" type="characterlady" />
+                        <condition id="-14" name="Compare variable" sid="707796480307291" type="System">
+                            <param id="0" name="Variable">Music1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="104478506391559" type="charlady">
-                            <param id="0" name="Animation">&quot;Walk&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="812879454915172">
-                    <conditions>
-                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="644794053892698" type="characterlady" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="711267231445238" type="charlady">
-                            <param id="0" name="Animation">&quot;Stand&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="0" name="Play" sid="891276809788304" type="Audio">
+                            <param id="0" name="Audio file">MattOglseby - 1</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="980451262665501">
+        <event-block sid="501999355503195">
             <conditions>
-                <condition id="0" name="On key pressed" sid="812607067738146" type="Keyboard">
-                    <param id="0" name="Key">37</param>
+                <condition id="0" name="On collision with another object" sid="662718395931014" type="charlady2">
+                    <param id="0" name="Object">enemybhau2</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="531821250946870" type="charlady">
-                    <param id="0" name="State">0</param>
+                <action behavior="Flash" id="0" name="Flash" sid="605938766829506" type="enemybhau2">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">3.0</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="387571830759468">
+        <event-block sid="478655135023000">
             <conditions>
-                <condition id="0" name="On key pressed" sid="595486490592483" type="Keyboard">
-                    <param id="0" name="Key">39</param>
+                <condition id="0" name="On collision with another object" sid="773988492497007" type="charlady2">
+                    <param id="0" name="Object">enemyFlying_3</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="7" name="Set mirrored" sid="115775568199670" type="charlady">
+                <action behavior="Flash" id="0" name="Flash" sid="322242763881092" type="charlady2">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="514694461450588" type="Function">
+                    <param id="0" name="Name">&quot;playEnemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-11" name="Subtract from" sid="990034634718844" type="System">
+                    <param id="0" name="Variable">PlayerHeart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698707663755767">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="906087185661012" type="charlady2">
+                    <param id="0" name="Object">enemyFloating_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="360525270738822" type="charlady2">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="578413886872877" type="Function">
+                    <param id="0" name="Name">&quot;playEnemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-11" name="Subtract from" sid="885621358616816" type="System">
+                    <param id="0" name="Variable">PlayerHeart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="525467482125095">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="383710636745813" type="enemySwimming_2" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="907611053019681">
+            <conditions>
+                <condition id="-4" name="Trigger once while true" sid="213212226989758" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="597558022802680" type="enemySwimming_2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="594401533909493">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="652507513544468" type="charlady2">
+                    <param id="0" name="Object">enemySwimming_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="794224133235410" type="charlady2">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="906703506906443" type="Function">
+                    <param id="0" name="Name">&quot;playEnemy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-11" name="Subtract from" sid="929725764368743" type="System">
+                    <param id="0" name="Variable">PlayerHeart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="170631750136856">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="367299083374201" type="charlady2">
+                    <param id="0" name="Object">blueGem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="922033282918093" type="blueGem" />
+                <action id="-10" name="Add to" sid="780956720557243" type="System">
+                    <param id="0" name="Variable">Ge</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="361233220413193">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="776266264630993" type="System">
+                            <param id="0" name="Variable">Sound1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="437832328345992" type="Audio">
+                            <param id="0" name="Audio file">Collect Gem</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="702273807781647">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="828263431084140" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="743907278798692">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="296708015037868" type="SpriteFont6">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;gem&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="189819323106437" type="SpriteFont6">
+                    <param id="0" name="Text">Ge</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="335236108948220">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="186409388103155" type="SpriteFont6">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;heart&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="175005362212020" type="SpriteFont6">
+                    <param id="0" name="Text">PlayerHeart</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668274432478994">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="132740433027419" type="System">
+                    <param id="0" name="Variable">PlayerHeart</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="575249499533160">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="608601592687110" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="678637312288912" type="charlady2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="789517575699080" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="307973613223731" type="System">
+                            <param id="0" name="Layer">&quot;Popups&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="505925925162719">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="505492001686158" type="System">
+                                    <param id="0" name="Variable">Sound1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="507784522476623" type="Audio">
+                                    <param id="0" name="Audio file">Jingle Lose</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="206236519553650">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="273924061107686" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="867939767459700">
+            <conditions>
+                <condition id="0" name="On function" sid="975493691060673" type="Function">
+                    <param id="0" name="Name">&quot;playEnemy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="152943246482629">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="210378590515864" type="System">
+                            <param id="0" name="Variable">Sound1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="158579485846961" type="Audio">
+                            <param id="0" name="Audio file">EnemyHit</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="253378267749116">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="477256720749626" type="System">
+                    <param id="0" name="Layer">&quot;Popups&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="616517567007067">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="766216281818662" type="charlady2">
+                            <param id="0" name="Instance variable">key</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="765827140248395">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="257791591974328" type="Touch">
+                                    <param id="0" name="Object">Restart</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="891823440706599" type="Restart">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="724686176349885" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="569398437970657" type="Restart">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="535072004023722" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="835272924801390" type="System">
+                                    <param id="0" name="Variable">PlayerHeart</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="804529806135996" type="System" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="899346137278644">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="945995625101904" type="charlady2">
+                            <param id="0" name="Instance variable">key</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="860369090429514">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="281019433861066" type="Touch">
+                                    <param id="0" name="Object">Restart</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="842279378055110" type="Restart">
+                                    <param id="0" name="Frame number">3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="365560260789870" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="385187797983371" type="Restart">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="629544409698841" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="274819115417731" type="System">
+                                    <param id="0" name="Variable">PlayerHeart</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="210061619971567" type="System">
+                                    <param id="0" name="Variable">Level</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="815297043220652" type="System">
+                                    <param id="0" name="Layout">Levels Layout</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="381593473024466">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="416526688226980" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="163037485641953">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="773143770941336" type="SpriteFont6">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;key&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="666407872706612" type="SpriteFont6">
+                                    <param id="0" name="Text">charlady2.key</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="259295817741824">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="608989394968955" type="charlady2">
+                    <param id="0" name="Object">doorGreen_lock</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="783240363476457" type="doorGreen_lock">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="519527492691290" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-12" name="Set group active" sid="212420728736442" type="System">
+                    <param id="0" name="Group name">&quot;Player&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="897644140068051" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="982301655759708" type="System">
+                    <param id="0" name="Layer">&quot;Popups&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="729982258805807" type="complete">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="882384169006132" type="Restart">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="251677440670284">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="902295198712954" type="System">
+                            <param id="0" name="Variable">Sound1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="598725852278021" type="Audio">
+                            <param id="0" name="Audio file">Jingle Win</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="842829248180764" title="Player">
+            <sub-events>
+                <event-group description="" sid="781179416839740" title="Player Animation">
+                    <sub-events>
+                        <event-block sid="859889712496086">
+                            <conditions>
+                                <condition behavior="Platform" id="8" name="On moved" sid="512918940792692" type="charlady2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="489442639265962" type="charlady2">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="605409103502416">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="474730866967441" type="charlady2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="112177795770753" type="charlady2">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="592293093143382">
+                            <conditions>
+                                <condition behavior="Platform" id="5" name="On jump" sid="717627108949394" type="charlady2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="583204765736647" type="charlady2">
+                                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="288084615084493">
+                            <conditions>
+                                <condition behavior="Platform" id="9" name="On landed" sid="641326167964280" type="charlady2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="552032971607385" type="charlady2">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="768979564030651">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="472832362436034" type="charlady2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="681693289568875" type="charlady2">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="696544954901339">
+                            <conditions>
+                                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="255171144219434" type="charlady2" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="904052580304005" type="charlady2">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="876522940386154">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="509578354592428" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="440515982539125" type="charlady2">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="171108353207555">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="124705323556797" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="647390577550182" type="charlady2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="999563848441826" title="Player Control">
+                    <sub-events>
+                        <event-block sid="977261674669562">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="960493667756117" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="510284256947072" type="charlady2">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="129247649265527">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="207083423655223" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="283430543688288" type="charlady2">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="607172723336852">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="160364527092491" type="Keyboard">
+                                    <param id="0" name="Key">38</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="685679334915308" type="charlady2">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="313273373217371">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="414824891749676" type="charlady2">
+                    <param id="0" name="Object">keyGreen</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="882370631576708" type="keyGreen" />
+                <action id="-11" name="Add to" sid="850490004846318" type="charlady2">
+                    <param id="0" name="Instance variable">key</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="930384968165688" type="keyHUD">
+                    <param id="0" name="Frame number">charlady2.key</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="994732694342856">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="385532007334863" type="System">
+                            <param id="0" name="Variable">Sound1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="446950398554160" type="Audio">
+                            <param id="0" name="Audio file">Collect Key</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="342549081830211">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="818146309869739" type="charlady2">
+                    <param id="0" name="Instance variable">key</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="879359812005375">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="476281119205146" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="152015068373419" type="doorGreen_lock">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="611702576254392" type="doorGreen_top">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="411781243614606">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="861667115973935" type="charlady2">
+                    <param id="0" name="Object">bottomfall</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="864831970074288">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="910289620707807" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="442057725257859" type="charlady2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="495624146382345" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="242820140107375" type="System">
+                            <param id="0" name="Layer">&quot;Popups&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="179146522287668">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="480646085044000" type="System">
+                                    <param id="0" name="Variable">Sound1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;on&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="634517134187214" type="Audio">
+                                    <param id="0" name="Audio file">Jingle Lose</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="577874532241676">
+            <conditions>
+                <condition id="-18" name="On created" sid="509531177790837" type="SpriteFont5" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="833302177816256" type="SpriteFont5">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action behavior="Timer" id="0" name="Start timer" sid="609017420690899" type="SpriteFont5">
+                    <param id="0" name="Duration">0.05</param>
+                    <param id="1" name="Type">1</param>
+                    <param id="2" name="Tag">&quot;add&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307305965218101">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="774743444821231" type="SpriteFont5">
+                    <param id="0" name="Tag">&quot;add&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Append text" sid="517877822227314" type="SpriteFont5">
+                    <param id="0" name="Text">mid(SpriteFont5.sText, len(SpriteFont5.Text), 1)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="234215085891501">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="482729865781262" type="SpriteFont5">
+                            <param id="0" name="Text to compare">SpriteFont5.sText</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Timer" id="1" name="Stop timer" sid="416926503964090" type="SpriteFont5">
+                            <param id="0" name="Tag">&quot;add&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="766141921328623" type="homeplay">
+                            <param id="0" name="Instance variable">next</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="173973094106369">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="953452079033192" type="charlady2">
+                    <param id="0" name="Object">info1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="724010815491930" type="charlady2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="977016748270214" type="System">
+                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="257922684793971" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="364192163417387" type="System">
+                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="233954457381605" type="charlady2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="490433177570314">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="893752604323192" type="charlady2">
+                    <param id="0" name="Object">queButton</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="841458290316182">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="647816332459427" type="response">
+                            <param id="0" name="Text to compare">&quot;&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="452555992441206" type="charlady2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="718734427657927" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="979735691637733" type="System">
+                            <param id="0" name="Layer">&quot;quePopup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="361385477429711">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="156740181651659" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="659914004970704" type="charlady2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="288151979599578" type="System">
+                            <param id="0" name="Seconds">0.4</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="853776371613183" type="System">
+                            <param id="0" name="Layer">&quot;quePopup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="117013827697632" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="735052208932097" type="System">
+                            <param id="0" name="Layer">&quot;quePopup&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="393822166622718" type="charlady2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="230365343441809">
+            <conditions>
+                <condition id="1" name="On text changed" sid="966761003355150" type="TextBox" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="572945591220542" type="response">
+                    <param id="0" name="Text">TextBox.Text=&quot;1091&quot;?&quot;Wow! you answered it right&quot; : &quot;Wrong Answer&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="234082884360823" type="System">
+                    <param id="0" name="Seconds">1.3</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="141213874811717" type="System">
+                    <param id="0" name="Layer">&quot;quePopup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="631100921133657" type="charlady2">
                     <param id="0" name="State">1</param>
                 </action>
             </actions>

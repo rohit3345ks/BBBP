@@ -91,7 +91,7 @@
                         <space-char-width>-1</space-char-width>
                     </properties>
                     <instance-variables>
-                        <sText>Hi Gamer! Today&apos;s world is a place where women are given an equal place as men. But you know what? My family tested my baby&apos;s gender against law and now they want my baby girl to get killed even before she steps into the world..I am struggling to save my child. BUT BUT BUT i will not loose hope because i know i have the power to fight for my child....This is reality, a sad reality... Welcome to the game world where you can change something.</sText>
+                        <sText>Hi Gamer! Today&apos;s world is a place where women are given an equal place as men. But you know what? My family tested my baby&apos;s gender against law and now they want my baby girl to get killed even before she steps into the world. I am struggling to save my child. BUT BUT BUT i will not loose hope because i know i have the power to fight for my child....This is reality, a sad reality... Welcome to the game world where you can change something.</sText>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Timer" />

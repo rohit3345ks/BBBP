@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nIn the description of SpriteFont+ you state\r\n_The license is totally open so feel free to use it in your commercial or personal projects, etc. No attribution necessary._\r\n\r\nIn fact the GPLv3 license you provide, is almost unusable in commercial projects. It forces me to publish my game under GPLv3 too, which means I have to publish it free and open source.\r\n\r\nWas that your intention? would you mind, publishing it under a less restrictive license, like MIT?",
+    "LastUpdatedDate": "2014-10-17T08:15:10.867-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "spritefontplus",
+    "ReportedDate": "2014-10-17T08:15:10.867-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Restrictive License",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

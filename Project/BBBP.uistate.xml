@@ -10,16 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Start Layout</layout>
-        <layout order="3">Story Layout</layout>
-        <layout order="5">Levels Layout</layout>
-        <layout order="9">2</layout>
-        <layout active="1" order="8">1</layout>
-        <event-sheet order="2">Start Event Sheet</event-sheet>
-        <event-sheet order="4">Story Event Sheet</event-sheet>
-        <event-sheet order="6">Levels Event Sheet</event-sheet>
-        <event-sheet order="7">2</event-sheet>
-        <event-sheet order="10">1</event-sheet>
+        <layout order="0">Start Layout</layout>
+        <layout order="2">Story Layout</layout>
+        <layout order="4">Levels Layout</layout>
+        <layout order="7">1</layout>
+        <layout order="8">2</layout>
+        <event-sheet order="1">Start Event Sheet</event-sheet>
+        <event-sheet order="3">Story Event Sheet</event-sheet>
+        <event-sheet order="5">Levels Event Sheet</event-sheet>
+        <event-sheet order="6">2</event-sheet>
+        <event-sheet active="1" order="9">1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -35,7 +35,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
-        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/set1_background/" />
         <folder expanded="1" path="animation-folder/set3_background/" />
         <folder expanded="1" path="animation-folder/girl_child_transparent/" />
@@ -85,5 +85,108 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tileGreen_22/" />
         <folder expanded="1" path="animation-folder/tileGreen_23/" />
         <folder expanded="1" path="animation-folder/charlady/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/tileGreen_6/" />
+        <folder expanded="1" path="animation-folder/tileGreen_7/" />
+        <folder expanded="1" path="animation-folder/tileGreen_12/" />
+        <folder expanded="1" path="animation-folder/tileGreen_14/" />
+        <folder expanded="1" path="animation-folder/tileGreen_17/" />
+        <folder expanded="1" path="animation-folder/tileGreen_20/" />
+        <folder expanded="1" path="animation-folder/tileGreen_21/" />
+        <folder expanded="1" path="animation-folder/tileGreen_24/" />
+        <folder expanded="1" path="animation-folder/tileGreen_25/" />
+        <folder expanded="1" path="animation-folder/tileGreen_26/" />
+        <folder expanded="1" path="animation-folder/charlady2/" />
+        <folder expanded="1" path="animation-folder/tileGreen_27/" />
+        <folder expanded="1" path="animation-folder/tileGreen_28/" />
+        <folder expanded="1" path="animation-folder/tileGreen_29/" />
+        <folder expanded="1" path="animation-folder/tileGreen_30/" />
+        <folder expanded="1" path="animation-folder/tileGreen_31/" />
+        <folder expanded="1" path="animation-folder/tileGreen_32/" />
+        <folder expanded="1" path="animation-folder/tileGreen_33/" />
+        <folder expanded="1" path="animation-folder/tileGreen_34/" />
+        <folder expanded="1" path="animation-folder/tileGreen_35/" />
+        <folder expanded="1" path="animation-folder/tileGreen_36/" />
+        <folder expanded="1" path="animation-folder/tileGreen_37/" />
+        <folder expanded="1" path="animation-folder/tileGreen_38/" />
+        <folder expanded="1" path="animation-folder/tileGreen_39/" />
+        <folder expanded="1" path="animation-folder/tileGreen_40/" />
+        <folder expanded="1" path="animation-folder/tileGreen_41/" />
+        <folder expanded="1" path="animation-folder/tileGreen_42/" />
+        <folder expanded="1" path="animation-folder/tileGreen_43/" />
+        <folder expanded="1" path="animation-folder/tileGreen_44/" />
+        <folder expanded="1" path="animation-folder/tileGreen_45/" />
+        <folder expanded="1" path="animation-folder/tileGreen_46/" />
+        <folder expanded="1" path="animation-folder/tileGreen_47/" />
+        <folder expanded="1" path="animation-folder/tileGreen_48/" />
+        <folder expanded="1" path="animation-folder/tileGreen_49/" />
+        <folder expanded="1" path="animation-folder/tileGreen_50/" />
+        <folder expanded="1" path="animation-folder/tileGreen_51/" />
+        <folder expanded="1" path="animation-folder/enemybhau/" />
+        <folder expanded="1" path="animation-folder/enemybhau2/" />
+        <folder expanded="1" path="animation-folder/tileGreen_52/" />
+        <folder expanded="1" path="animation-folder/tileGreen_53/" />
+        <folder expanded="1" path="animation-folder/tileGreen_54/" />
+        <folder expanded="1" path="animation-folder/tileGreen_55/" />
+        <folder expanded="1" path="animation-folder/tileGreen_56/" />
+        <folder expanded="1" path="animation-folder/tileGreen_57/" />
+        <folder expanded="1" path="animation-folder/tileGreen_58/" />
+        <folder expanded="1" path="animation-folder/enemyFloating_2/" />
+        <folder expanded="1" path="animation-folder/enemyFlying_2/" />
+        <folder expanded="1" path="animation-folder/enemyFlying_3/" />
+        <folder expanded="1" path="animation-folder/tileGreen_59/" />
+        <folder expanded="1" path="animation-folder/tileGreen_60/" />
+        <folder expanded="1" path="animation-folder/tileGreen_61/" />
+        <folder expanded="1" path="animation-folder/tileGreen_62/" />
+        <folder expanded="1" path="animation-folder/tileGreen_63/" />
+        <folder expanded="1" path="animation-folder/tileGreen_64/" />
+        <folder expanded="1" path="animation-folder/tileGreen_65/" />
+        <folder expanded="1" path="animation-folder/tileGreen_66/" />
+        <folder expanded="1" path="animation-folder/tileGreen_67/" />
+        <folder expanded="1" path="animation-folder/tileGreen_68/" />
+        <folder expanded="1" path="animation-folder/tileGreen_69/" />
+        <folder expanded="1" path="animation-folder/tileGreen_70/" />
+        <folder expanded="1" path="animation-folder/tileGreen_71/" />
+        <folder expanded="1" path="animation-folder/enemyWalking_2/" />
+        <folder expanded="1" path="animation-folder/tileGreen_72/" />
+        <folder expanded="1" path="animation-folder/tileGreen_73/" />
+        <folder expanded="1" path="animation-folder/tileGreen_74/" />
+        <folder expanded="1" path="animation-folder/tileGreen_75/" />
+        <folder expanded="1" path="animation-folder/tileGreen_76/" />
+        <folder expanded="1" path="animation-folder/tileGreen_77/" />
+        <folder expanded="1" path="animation-folder/tileGreen_78/" />
+        <folder expanded="1" path="animation-folder/tileGreen_79/" />
+        <folder expanded="1" path="animation-folder/tileGreen_80/" />
+        <folder expanded="1" path="animation-folder/tileGreen_81/" />
+        <folder expanded="1" path="animation-folder/tileGreen_82/" />
+        <folder expanded="1" path="animation-folder/tileGreen_83/" />
+        <folder expanded="1" path="animation-folder/tileGreen_84/" />
+        <folder expanded="1" path="animation-folder/tileGreen_85/" />
+        <folder expanded="1" path="animation-folder/tileGreen_86/" />
+        <folder expanded="1" path="animation-folder/tileGreen_87/" />
+        <folder expanded="1" path="animation-folder/tileGreen_88/" />
+        <folder expanded="1" path="animation-folder/tileGreen_89/" />
+        <folder expanded="1" path="animation-folder/tileGreen_90/" />
+        <folder expanded="1" path="animation-folder/tileGreen_91/" />
+        <folder expanded="1" path="animation-folder/enemySwimming_2/" />
+        <folder expanded="1" path="animation-folder/blueGem/" />
+        <folder expanded="1" path="animation-folder/Gems3/" />
+        <folder expanded="1" path="animation-folder/hudHeart_full2/" />
+        <folder expanded="1" path="animation-folder/Window/" />
+        <folder expanded="1" path="animation-folder/complete/" />
+        <folder expanded="1" path="animation-folder/Restart/" />
+        <folder expanded="1" path="animation-folder/flagGreen_up/" />
+        <folder expanded="1" path="animation-folder/tileGreen_92/" />
+        <folder expanded="1" path="animation-folder/tileGreen_93/" />
+        <folder expanded="1" path="animation-folder/keyGreen/" />
+        <folder expanded="1" path="animation-folder/keyHUD/" />
+        <folder expanded="1" path="animation-folder/doorGreen_top/" />
+        <folder expanded="1" path="animation-folder/doorGreen_lock/" />
+        <folder expanded="1" path="animation-folder/key/" />
+        <folder expanded="1" path="animation-folder/bottomfall/" />
+        <folder expanded="1" path="animation-folder/info1/" />
+        <folder expanded="1" path="animation-folder/queButton/" />
     </folders-expanded>
 </c2uistate>

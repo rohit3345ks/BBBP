@@ -1,0 +1,43 @@
+<div class="wikidoc">
+<p>SpriteFont&#43; is a <a href="https://www.scirra.com/construct2" target="_blank">Construct 2</a> plugin that extends the existing Sprite Font native plugin to include richer support for individual character widths during editing and runtime. You can use it in
+ the free edition as well as all paid editions. The <a href="https://spritefontplus.codeplex.com/license">
+license</a> is totally open so feel free to use it in your commercial or personal projects, etc. No attribution necessary.</p>
+<p>Installation is really easy <em>(drag and drop the c2addon directly onto Construct 2).</em> You can find a more detailed guide here:
+<a href="https://spritefontplus.codeplex.com/wikipage?title=Installation">Installation</a>.</p>
+<p>SpriteFont&#43; does everything the native Sprite Font does <em>(all expressions, conditions and actions).</em> To find out more about these you can check out the
+<a href="https://www.scirra.com/manual/166/sprite-font" target="_blank">official manual over on Scirra</a>.</p>
+<h1>Char width JSON</h1>
+<p>This new property is where you will specify custom character widths. You can do this with the simple JSON format of [[WIDTH,”ABC”],[WIDTH,”DEF”]]. Here are my custom character widths for the font Andy:</p>
+<blockquote>
+<p><em>[[5,&quot;.:!&quot;],[6,&quot;1&quot;],[7,&quot;i|&quot;],[8,&quot;I,;'`&quot;],[9,&quot;l&quot;],[12,&quot;t[&quot;],[13,&quot;]&quot;],[14,&quot;°&lt;&gt;&quot;],[15,&quot;\&quot;(&quot;],[16,&quot;fry-)&quot;],[17,&quot;ac9&#43;=*&quot;],[18,&quot;ejopsv#&quot;],[19,&quot;gknux07?\/&quot;],[20,&quot;Ybdhq5&quot;],[21,&quot;wz48&quot;],[22,&quot;FH36~@&quot;],[23,&quot;DOUV2&quot;],[24,&quot;LT%&quot;],[25,&quot;KPQSX$£&quot;],[26,&quot;CE€&quot;],[27,&quot;AJZ&quot;],[28,&quot;Nm&quot;],[29,&quot;BGR&amp;&quot;],[30,&quot;W&quot;],[31,&quot;M&quot;],[36,&quot;©&quot;],[49,&quot;_&quot;]]</em><br>
+</p>
+<p>The main thing to note above is that you will have to escape the double quote character with
+<strong>\”</strong> <em>(you can see it in the example above with a width of 15)</em>.</p>
+</blockquote>
+<p>However, the far easier way is to use <a href="http://www.scirra.com/users/blackhornet" target="_blank">
+blackhornet’s</a> excellent Sprite Font Generator <a href="http://www.scirra.com/forum/sprite-font-generator_topic72160.html" target="_blank">
+Give Your Fonts Mono(spacing)</a>. In this linked forum post blackhornet outlines how to use the tool to take one of your fonts, generate the png and also the necessary JSON information regarding custom widths. Here’s an example with the font Andy:</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759448"><img title="image" border="0" alt="image" src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759449" width="687" height="431" style="border-right-width:0px; padding-left:0px; padding-right:0px; display:inline; border-top-width:0px; border-bottom-width:0px; border-left-width:0px; padding-top:0px"></a></p>
+<p>When I hit save I’ll be given 3 files: The PNG of each character, a Text File and an XML File. You can use the PNG file as your SpriteFont&#43; texture in Construct 2 and you’ll end up with something similar to this (Looks identical to a native sprite font object
+ using the same texture):</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759436"><img title="image" border="0" alt="image" src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759437" width="535" height="300" style="border-right-width:0px; padding-left:0px; padding-right:0px; display:inline; border-top-width:0px; border-bottom-width:0px; border-left-width:0px; padding-top:0px"></a></p>
+<p>First thing you’re going to want to do is open up that text file from Give Your Fonts Mono(spacing). Copy those Character Width, Character height and Character Set values into the corresponding properties in Construct 2.</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759450"><img title="image" border="0" alt="image" src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759451" width="693" height="222" style="border-right-width:0px; padding-left:0px; padding-right:0px; display:inline; border-top-width:0px; border-bottom-width:0px; border-left-width:0px; padding-top:0px"></a></p>
+<p>The 2 sprite font objects are still acting exactly the same. With a normal sprite font object you’d have to implement a couple of events to intialize a new array object using the JSON provided in the file then looping through it to set character widths.
+ You can find out more about this technique in that <a href="http://www.scirra.com/forum/sprite-font-generator_topic72160.html" target="_blank">
+blackhornet post linked above</a>. This works perfectly. The problem is that your runtime will look totally different from your edit window which can make things difficult. It also requires the overhead of adding an array object and the same events everytime
+ you use a sprite font. Here’s what those events look like for my Andy font:</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759452"><img title="image" border="0" alt="image" src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759453" width="689" height="95" style="border-right-width:0px; padding-left:0px; padding-right:0px; display:inline; border-top-width:0px; border-bottom-width:0px; border-left-width:0px; padding-top:0px"></a></p>
+<p>To do the same thing with SpriteFont&#43;, just take that same JSON from the Give Your Fonts Mono(spacing) text file and paste it into the Char width JSON property:</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759454"><img title="image" border="0" alt="image" src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759455" width="691" height="193" style="border-right-width:0px; padding-left:0px; padding-right:0px; display:inline; border-top-width:0px; border-bottom-width:0px; border-left-width:0px; padding-top:0px"></a></p>
+<p>You’ll notice the edit window immediately updates with the custom widths in place. The space used will also match the runtime exactly. Now to fix that space width…</p>
+<h1>Space char width</h1>
+<p>The Space char width property is optional. When set to the default of –1, it is ignored entirely. When you set it, it will set the width of the space character. So for the example above I set it to something like 9:</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759444"><img title="image" border="0" alt="image" src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759445" width="629" height="290" style="border-right-width:0px; padding-left:0px; padding-right:0px; display:inline; border-top-width:0px; border-bottom-width:0px; border-left-width:0px; padding-top:0px"></a></p>
+<p>The changes will be immediately updated in the edit window and again the space used will match the runtime exactly.</p>
+<h1>Summary</h1>
+<p>That’s it for now! The difference primarily comes down to a better editing experience and removal of runtime setup events. Here’s how the 2 plugins look in the edit window versus runtime when the events as described above are used for the native sprite font
+ object:</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759456"><img title="image" border="0" alt="image" src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=spritefontplus&DownloadId=759457" width="686" height="311" style="border-right-width:0px; padding-left:0px; padding-right:0px; display:inline; border-top-width:0px; border-bottom-width:0px; border-left-width:0px; padding-top:0px"></a></p>
+<p>They end up looking the same but the native plugin is a lot harder to work with when using custom character widths.</p>
+</div><div class="ClearBoth"></div>

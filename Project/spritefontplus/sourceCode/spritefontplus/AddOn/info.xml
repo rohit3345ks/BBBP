@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<c2addon>
+	<type>plugin</type>
+	
+	<name>SpriteFont+</name>	
+	<version>1.0</version>
+	<author>Chris Kent</author>
+	<website>http://www.thechriskent.com</website>
+	<documentation>https://spritefontplus.codeplex.com/documentation</documentation>
+	<description>Extends the native Sprite Font to provide easier configuration and editing.</description>
+</c2addon>
