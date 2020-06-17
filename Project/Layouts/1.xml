@@ -5072,28 +5072,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="enemyFloating_2" uid="210">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>461</x>
-                        <y>450</y>
-                        <z>0</z>
-                        <width>42</width>
-                        <height>40</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="enemyFlying_3" uid="211">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
