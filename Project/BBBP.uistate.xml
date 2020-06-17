@@ -191,5 +191,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tileBlue_/" />
         <folder expanded="1" path="animation-folder/tileBlue_2/" />
         <folder expanded="1" path="animation-folder/bottoml2/" />
+        <folder expanded="1" path="animation-folder/l3/" />
     </folders-expanded>
 </c2uistate>
