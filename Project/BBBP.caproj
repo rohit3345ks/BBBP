@@ -3256,6 +3256,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="bottoml2" sid="398085433091447">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644281584979019" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Platformer\GUI\gui\button\Button_15.png">
+                        <collision-poly>
+                            <point x="0.0327103" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.962617" y="0.0833333" />
+                            <point x="0.990654" y="0.5" />
+                            <point x="0.953271" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0373832" y="0.916667" />
+                            <point x="0.0046729" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

@@ -316,22 +316,43 @@
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="405255650461756">
+                <event-block sid="263689694751025">
                     <conditions>
-                        <condition id="-4" name="Trigger once while true" sid="279468904467724" type="System" />
+                        <condition id="-4" name="Trigger once while true" sid="146741751953227" type="System" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="127585099137782" type="playerRed_Stand">
+                        <action id="4" name="Set animation" sid="565968562601184" type="playerRed_Stand">
                             <param id="0" name="Animation">&quot;Dead&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="286396089954101" type="playerRed_Stand">
+                        <action behavior="Platform" id="11" name="Set enabled" sid="361337349237203" type="playerRed_Stand">
                             <param id="0" name="State">0</param>
                         </action>
-                        <action id="-16" name="Wait" sid="856288107193996" type="System">
+                        <action id="-16" name="Wait" sid="166123140365126" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
-                        <action id="-26" name="Restart layout" sid="541602249241412" type="System" />
+                        <action id="-26" name="Restart layout" sid="758894795391418" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="873644807285412">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="122313950264418" type="playerRed_Stand">
+                    <param id="0" name="Object">bottoml2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="804080641416071">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="917395282456106" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="920329221689157" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="876101597095907" type="System" />
                     </actions>
                 </event-block>
             </sub-events>
