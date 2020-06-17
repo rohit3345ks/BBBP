@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>1</name>
     <events>
+        <variable constant="0" name="correct_ans" sid="530070839320790" static="0" type="number">0</variable>
         <variable constant="0" name="Music1" sid="626731305405724" static="0" type="text">&quot;on&quot;</variable>
         <variable constant="0" name="PlayerHeart" sid="560081260052591" static="0" type="number">3</variable>
         <variable constant="0" name="Sound1" sid="618020597159314" static="0" type="text">on</variable>
@@ -37,6 +38,35 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="700121644818059">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="266818442654876" type="Keyboard">
+                    <param id="0" name="Key">71</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="823595794457368" type="charlady2">
+                    <param id="0" name="Animation">&quot;hit&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="6" name="Set speed" sid="445384502297692" type="charlady2">
+                    <param id="0" name="Speed">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="279687659217914">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="202607113223249" type="charlady2">
+                    <param id="0" name="Object">enemyFloating_2</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="192401895817371" type="charlady2">
+                    <param id="0" name="Animation">&quot;hit&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="762719143969552" type="enemyFloating_2" />
+            </actions>
         </event-block>
         <event-block sid="501999355503195">
             <conditions>
@@ -324,6 +354,10 @@
                                     <param id="1" name="Value">3</param>
                                 </action>
                                 <action id="-26" name="Restart layout" sid="804529806135996" type="System" />
+                                <action id="-9" name="Set value" sid="526113261518770" type="System">
+                                    <param id="0" name="Variable">Ge</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -367,6 +401,10 @@
                                 </action>
                                 <action id="-2" name="Go to layout" sid="815297043220652" type="System">
                                     <param id="0" name="Layout">Levels Layout</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="694005357359918" type="System">
+                                    <param id="0" name="Variable">Ge</param>
+                                    <param id="1" name="Value">0</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -629,6 +667,11 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">3</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="249460343731081" type="System">
+                    <param id="0" name="Variable">correct_ans</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
@@ -703,27 +746,28 @@
                 <action behavior="Platform" id="11" name="Set enabled" sid="724010815491930" type="charlady2">
                     <param id="0" name="State">0</param>
                 </action>
+                <action id="4" name="Set animation" sid="797693650868952" type="charlady2">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="376562451750002" type="System">
+                    <param id="0" name="Seconds">0.8</param>
+                </action>
+                <action id="-10" name="Set value" sid="741693341296035" type="SpriteFont5">
+                    <param id="0" name="Instance variable">sText</param>
+                    <param id="1" name="Value">&quot;Do you know, the national level woman helpline number is 1091.&quot;</param>
+                </action>
                 <action id="0" name="Set text" sid="833302177816256" type="SpriteFont5">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
                 <action behavior="Timer" id="0" name="Start timer" sid="609017420690899" type="SpriteFont5">
-                    <param id="0" name="Duration">0.05</param>
+                    <param id="0" name="Duration">0.07</param>
                     <param id="1" name="Type">1</param>
                     <param id="2" name="Tag">&quot;add&quot;</param>
                 </action>
                 <action id="-4" name="Set layer visible" sid="977016748270214" type="System">
                     <param id="0" name="Layer">&quot;infoPopup&quot;</param>
                     <param id="1" name="Visibility">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="257922684793971" type="System">
-                    <param id="0" name="Seconds">3</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="364192163417387" type="System">
-                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action behavior="Platform" id="11" name="Set enabled" sid="233954457381605" type="charlady2">
-                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
@@ -750,6 +794,160 @@
                         <action behavior="Timer" id="1" name="Stop timer" sid="416926503964090" type="SpriteFont5">
                             <param id="0" name="Tag">&quot;add&quot;</param>
                         </action>
+                        <action id="-16" name="Wait" sid="257922684793971" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="364192163417387" type="System">
+                            <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="233954457381605" type="charlady2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="738127435573967">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="733713152765803" type="charlady2">
+                    <param id="0" name="Object">info2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="568288751699156" type="charlady2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="291088537338876" type="charlady2">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="378488495137360" type="System">
+                    <param id="0" name="Seconds">0.8</param>
+                </action>
+                <action id="-10" name="Set value" sid="104909233395159" type="SpriteFont5">
+                    <param id="0" name="Instance variable">sText</param>
+                    <param id="1" name="Value">&quot;The Ujjawala scheme helps in the prevention of trafficking and provides support for rescue and rehabilitation of woman.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="858719696443496" type="SpriteFont5">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action behavior="Timer" id="0" name="Start timer" sid="184462086612845" type="SpriteFont5">
+                    <param id="0" name="Duration">0.06</param>
+                    <param id="1" name="Type">1</param>
+                    <param id="2" name="Tag">&quot;add&quot;</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="672127294020638" type="System">
+                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="312038265934793">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="123340899239656" type="SpriteFont5">
+                    <param id="0" name="Tag">&quot;add&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Append text" sid="659181435727561" type="SpriteFont5">
+                    <param id="0" name="Text">mid(SpriteFont5.sText, len(SpriteFont5.Text), 1)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="789068317962692">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="789900146534986" type="SpriteFont5">
+                            <param id="0" name="Text to compare">SpriteFont5.sText</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Timer" id="1" name="Stop timer" sid="285866090796985" type="SpriteFont5">
+                            <param id="0" name="Tag">&quot;add&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="561505706103559" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="928023901295282" type="System">
+                            <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="189940563936571" type="charlady2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="183496615530397">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="464072160615145" type="charlady2">
+                    <param id="0" name="Object">info3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="772462287807893" type="charlady2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="533221296968252" type="charlady2">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="931732636750371" type="System">
+                    <param id="0" name="Seconds">0.8</param>
+                </action>
+                <action id="-10" name="Set value" sid="419049014098121" type="SpriteFont5">
+                    <param id="0" name="Instance variable">sText</param>
+                    <param id="1" name="Value">&quot;National Mission for Empowerment of Women was launched on 15 August, 2011 to empower women holistically.&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="639846397379905" type="SpriteFont5">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action behavior="Timer" id="0" name="Start timer" sid="689671159965904" type="SpriteFont5">
+                    <param id="0" name="Duration">0.06</param>
+                    <param id="1" name="Type">1</param>
+                    <param id="2" name="Tag">&quot;add&quot;</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="421792660529691" type="System">
+                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="593759439406062">
+            <conditions>
+                <condition behavior="Timer" id="0" name="On timer" sid="971683670335760" type="SpriteFont5">
+                    <param id="0" name="Tag">&quot;add&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Append text" sid="530275530261571" type="SpriteFont5">
+                    <param id="0" name="Text">mid(SpriteFont5.sText, len(SpriteFont5.Text), 1)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="852603030889890">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="843837428905936" type="SpriteFont5">
+                            <param id="0" name="Text to compare">SpriteFont5.sText</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Timer" id="1" name="Stop timer" sid="790174166642724" type="SpriteFont5">
+                            <param id="0" name="Tag">&quot;add&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="215413240696414" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="531641934594388" type="System">
+                            <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="890289920190223" type="charlady2">
+                            <param id="0" name="State">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -760,74 +958,395 @@
                     <param id="0" name="Object">queButton</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="452555992441206" type="charlady2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="553297176192437" type="charlady2">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="171840084177087" type="System">
+                    <param id="0" name="Seconds">0.8</param>
+                </action>
+                <action id="0" name="Set text" sid="243813460419274" type="SpriteFontque">
+                    <param id="0" name="Text">&quot;What is the national level Woman Helpline Number?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="718734427657927" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="979735691637733" type="System">
+                    <param id="0" name="Layer">&quot;quePopup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="249634859663392" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="6" name="Set focused" sid="238989548789551" type="TextBox" />
+            </actions>
+        </event-block>
+        <event-block sid="236453594810841">
+            <conditions>
+                <condition id="1" name="On text changed" sid="840539300361701" type="TextBox" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="726016304751933" type="TextBox">
+                    <param id="0" name="Instance variable">answer1</param>
+                    <param id="1" name="Value">int(TextBox.Text)</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block any="1" sid="841458290316182">
+                <event-block sid="962106956931610">
                     <conditions>
-                        <condition id="0" name="Compare text" sid="647816332459427" type="response">
-                            <param id="0" name="Text to compare">&quot;&quot;</param>
-                            <param id="1" name="Case sensitivity">0</param>
+                        <condition id="-8" name="Compare two values" sid="404681328976915" type="System">
+                            <param id="0" name="First value">TextBox.answer1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1091</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="629816774244974" type="System">
+                            <param id="0" name="First value">SpriteFontque.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;What is the national level Woman Helpline Number?&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="452555992441206" type="charlady2">
-                            <param id="0" name="State">0</param>
+                        <action id="0" name="Set text" sid="864472309026883" type="response">
+                            <param id="0" name="Text">&quot;Wow! You answered it right&quot; </param>
                         </action>
-                        <action id="-16" name="Wait" sid="718734427657927" type="System">
-                            <param id="0" name="Seconds">0.4</param>
+                        <action id="-13" name="Set boolean" sid="404433709909011" type="queButton">
+                            <param id="0" name="Instance variable">ans1</param>
+                            <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="979735691637733" type="System">
-                            <param id="0" name="Layer">&quot;quePopup&quot;</param>
-                            <param id="1" name="Visibility">1</param>
+                        <action id="-10" name="Add to" sid="664744557553815" type="System">
+                            <param id="0" name="Variable">correct_ans</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="683689617411928" type="Moveahead">
+                            <param id="0" name="Instance variable">usable</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="259673081390183" type="Moveahead">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="618599683294320" type="System">
+                            <param id="0" name="Variable">correct_ans</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="361385477429711">
+                <event-block sid="667212939736424">
                     <conditions>
-                        <condition id="-22" name="Else" sid="156740181651659" type="System" />
+                        <condition id="-8" inverted="1" name="Compare two values" sid="585594349246207" type="System">
+                            <param id="0" name="First value">TextBox.answer1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1091</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="716555100819720" type="System">
+                            <param id="0" name="First value">len(TextBox.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">4</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="543518697022342" type="System">
+                            <param id="0" name="First value">SpriteFontque.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;What is the national level Woman Helpline Number?&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="659914004970704" type="charlady2">
-                            <param id="0" name="State">0</param>
+                        <action id="0" name="Set text" sid="550694898318036" type="response">
+                            <param id="0" name="Text">&quot;Sorry! Wrong Answer&quot; </param>
                         </action>
-                        <action id="-16" name="Wait" sid="288151979599578" type="System">
-                            <param id="0" name="Seconds">0.4</param>
+                        <action id="-13" name="Set boolean" sid="433949596704681" type="queButton">
+                            <param id="0" name="Instance variable">ans1</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-4" name="Set layer visible" sid="853776371613183" type="System">
-                            <param id="0" name="Layer">&quot;quePopup&quot;</param>
-                            <param id="1" name="Visibility">1</param>
+                        <action id="-13" name="Set boolean" sid="137355508981878" type="Moveahead">
+                            <param id="0" name="Instance variable">usable</param>
+                            <param id="1" name="Value">0</param>
                         </action>
-                        <action id="-16" name="Wait" sid="117013827697632" type="System">
-                            <param id="0" name="Seconds">2.5</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="735052208932097" type="System">
-                            <param id="0" name="Layer">&quot;quePopup&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="393822166622718" type="charlady2">
-                            <param id="0" name="State">1</param>
+                        <action id="-15" name="Set visible" sid="872073594720335" type="Moveahead">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="230365343441809">
+        <event-block sid="977231833234586">
             <conditions>
-                <condition id="1" name="On text changed" sid="966761003355150" type="TextBox" />
+                <condition id="0" name="On collision with another object" sid="681065086360446" type="charlady2">
+                    <param id="0" name="Object">queButton4</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="572945591220542" type="response">
-                    <param id="0" name="Text">TextBox.Text=&quot;1091&quot;?&quot;Wow! you answered it right&quot; : &quot;Wrong Answer&quot;</param>
+                <action behavior="Platform" id="11" name="Set enabled" sid="227298234563678" type="charlady2">
+                    <param id="0" name="State">0</param>
                 </action>
-                <action id="-16" name="Wait" sid="234082884360823" type="System">
-                    <param id="0" name="Seconds">2</param>
+                <action id="4" name="Set animation" sid="390523906868535" type="charlady2">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
-                <action id="-4" name="Set layer visible" sid="141213874811717" type="System">
+                <action id="-16" name="Wait" sid="727593497562275" type="System">
+                    <param id="0" name="Seconds">0.8</param>
+                </action>
+                <action id="6" name="Set focused" sid="328508503867793" type="TextBox" />
+                <action id="0" name="Set text" sid="472935315830078" type="SpriteFontque">
+                    <param id="0" name="Text">&quot;What does Ujjawala Scheme helps in preventing?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="602514034987741" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="857049661905143" type="System">
+                    <param id="0" name="Layer">&quot;quePopup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="221758170060659" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="6" name="Set focused" sid="876039217399219" type="TextBox" />
+            </actions>
+        </event-block>
+        <event-block sid="729861256067953">
+            <conditions>
+                <condition id="1" name="On text changed" sid="939266031626540" type="TextBox" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="862694070095898" type="TextBox">
+                    <param id="0" name="Instance variable">answer3</param>
+                    <param id="1" name="Value">lowercase(TextBox.Text)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="487999960272087">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="197445497988377" type="System">
+                            <param id="0" name="First value">TextBox.answer3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;trafficking&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="814307101924693" type="System">
+                            <param id="0" name="First value">SpriteFontque.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;What does Ujjawala Scheme helps in preventing?&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="882280323789807" type="response">
+                            <param id="0" name="Text">&quot;Wow! You answered it right&quot; </param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="754620813691316" type="queButton">
+                            <param id="0" name="Instance variable">ans1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="391482534041214" type="System">
+                            <param id="0" name="Variable">correct_ans</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="897730356221055" type="Moveahead">
+                            <param id="0" name="Instance variable">usable</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="825643970420052" type="Moveahead">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="198286845504799" type="System">
+                            <param id="0" name="Variable">correct_ans</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="561932705706413">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Compare two values" sid="737050668764959" type="System">
+                            <param id="0" name="First value">TextBox.answer3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;trafficking&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="557684243506880" type="System">
+                            <param id="0" name="First value">len(TextBox.Text)</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Second value">8</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="587076918928827" type="System">
+                            <param id="0" name="First value">SpriteFontque.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;What does Ujjawala Scheme helps in preventing?&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="238079138089839" type="response">
+                            <param id="0" name="Text">&quot;Sorry! Wrong Answer&quot; </param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="721141553742462" type="queButton">
+                            <param id="0" name="Instance variable">ans1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="168345380304396" type="Moveahead">
+                            <param id="0" name="Instance variable">usable</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="538840782271463" type="Moveahead">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="906267434628616">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="477742460878432" type="charlady2">
+                    <param id="0" name="Object">queButton5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="270088181884790" type="charlady2">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="719418248580092" type="charlady2">
+                    <param id="0" name="Animation">&quot;stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="808074365864211" type="System">
+                    <param id="0" name="Seconds">0.8</param>
+                </action>
+                <action id="0" name="Set text" sid="158114784658875" type="SpriteFontque">
+                    <param id="0" name="Text">&quot;In which year National Mission for Empowerment of Woman was launched?&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="761911602832344" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="214424599267659" type="System">
+                    <param id="0" name="Layer">&quot;quePopup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="397076947309471" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="6" name="Set focused" sid="549876844392021" type="TextBox" />
+            </actions>
+        </event-block>
+        <event-block sid="131687089017947">
+            <conditions>
+                <condition id="1" name="On text changed" sid="780899420740751" type="TextBox" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="920915432256099" type="TextBox">
+                    <param id="0" name="Instance variable">answer2</param>
+                    <param id="1" name="Value">int(TextBox.Text)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="288672486610035">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="877810431206791" type="System">
+                            <param id="0" name="First value">TextBox.answer2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2011</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="731629808315279" type="System">
+                            <param id="0" name="First value">SpriteFontque.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;In which year National Mission for Empowerment of Woman was launched?&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="907046613804582" type="response">
+                            <param id="0" name="Text">&quot;Wow! You answered it right&quot; </param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="847591041862993" type="queButton">
+                            <param id="0" name="Instance variable">ans1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="354669801780361" type="System">
+                            <param id="0" name="Variable">correct_ans</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="929282487668562" type="Moveahead">
+                            <param id="0" name="Instance variable">usable</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="619792560724184" type="Moveahead">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="954162099938165" type="System">
+                            <param id="0" name="Variable">correct_ans</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="122722816033317">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Compare two values" sid="518982407335079" type="System">
+                            <param id="0" name="First value">TextBox.answer2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">2011</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="381868325710989" type="System">
+                            <param id="0" name="First value">SpriteFontque.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;In which year National Mission for Empowerment of Woman was launched?&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="867812834750003" type="System">
+                            <param id="0" name="First value">len(TextBox.Text)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="466133100919503" type="response">
+                            <param id="0" name="Text">&quot;Sorry! Wrong Answer&quot; </param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="399224589177899" type="queButton">
+                            <param id="0" name="Instance variable">ans1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="935544636204317" type="Moveahead">
+                            <param id="0" name="Instance variable">usable</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="735793784879994" type="Moveahead">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="765926944998931">
+            <conditions>
+                <condition id="17" name="On tap object" sid="486836239122947" type="Touch">
+                    <param id="0" name="Object">Moveahead</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="911506878266974" type="Moveahead">
+                    <param id="0" name="Instance variable">usable</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="723108366084228" type="Moveahead">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="162879592055965" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="5" name="Set frame" sid="608956640597878" type="Moveahead">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="162577169051042" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="564137202076050" type="System">
                     <param id="0" name="Layer">&quot;quePopup&quot;</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
-                <action behavior="Platform" id="11" name="Set enabled" sid="631100921133657" type="charlady2">
+                <action behavior="Platform" id="11" name="Set enabled" sid="752839520182827" type="charlady2">
                     <param id="0" name="State">1</param>
+                </action>
+                <action id="0" name="Set text" sid="111931636008540" type="response">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="122355300156325" type="Moveahead">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="503722305689447" type="TextBox">
+                    <param id="0" name="Text">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
