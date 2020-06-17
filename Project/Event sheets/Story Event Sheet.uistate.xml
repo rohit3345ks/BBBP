@@ -8,8 +8,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <conditions-column>256</conditions-column>
     <actions-namecolumn>31</actions-namecolumn>
     <condition-namecolumns>
+<<<<<<< HEAD
         <nest>28</nest>
         <nest>28</nest>
+=======
+        <nest>24</nest>
+        <nest>22</nest>
+        <nest>19</nest>
+>>>>>>> 3de57f694c1f5ebe5a5f2eca7919f3bfb0996f4e
     </condition-namecolumns>
     <events />
 </c2uistate>
