@@ -6670,11 +6670,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>787.129943848</x>
-                        <y>403.819244385</y>
+                        <x>790.10333252</x>
+                        <y>403.399505615</y>
                         <z>0</z>
-                        <width>20.379150391</width>
-                        <height>20.746551514</height>
+                        <width>26.262756348</width>
+                        <height>24.948730469</height>
                         <depth>0</depth>
                         <hotspotX>0.505376339</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -6695,10 +6695,10 @@
                         <x>1745.407592773</x>
                         <y>428.10760498</y>
                         <z>0</z>
-                        <width>33.274414063</width>
+                        <width>33.63609314</width>
                         <height>35.596923828</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.505376339</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -7243,7 +7243,7 @@
                         <character-width>23</character-width>
                         <character-height>25</character-height>
                         <character-set>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_~#&quot;&apos;&amp;()[]|`\/@°+=*$£€&lt;&gt;</character-set>
-                        <text>The text will appear here.</text>
+                        <text>What is the woman helpline number?</text>
                         <scale>1</scale>
                         <initial-visibility>Visible</initial-visibility>
                         <horizontal-alignment>Left</horizontal-alignment>

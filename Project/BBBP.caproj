@@ -3201,7 +3201,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577700438333254" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\Projects\Minor Project (BBBP Game)\BBBP - 1\BBBP\Platformer\GUI\gui\button\Button_71.png">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Platformer\GUI\gui\button\Button_70.png">
                         <collision-poly>
                             <point x="0.076087" y="0.0729167" />
                             <point x="0.5" y="0.0104167" />

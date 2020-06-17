@@ -693,11 +693,16 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="577874532241676">
+        <event-block sid="173973094106369">
             <conditions>
-                <condition id="-18" name="On created" sid="509531177790837" type="SpriteFont5" />
+                <condition id="0" name="On collision with another object" sid="953452079033192" type="charlady2">
+                    <param id="0" name="Object">info1</param>
+                </condition>
             </conditions>
             <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="724010815491930" type="charlady2">
+                    <param id="0" name="State">0</param>
+                </action>
                 <action id="0" name="Set text" sid="833302177816256" type="SpriteFont5">
                     <param id="0" name="Text">&quot;&quot;</param>
                 </action>
@@ -705,6 +710,20 @@
                     <param id="0" name="Duration">0.05</param>
                     <param id="1" name="Type">1</param>
                     <param id="2" name="Tag">&quot;add&quot;</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="977016748270214" type="System">
+                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="257922684793971" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="364192163417387" type="System">
+                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="233954457381605" type="charlady2">
+                    <param id="0" name="State">1</param>
                 </action>
             </actions>
         </event-block>
@@ -731,39 +750,9 @@
                         <action behavior="Timer" id="1" name="Stop timer" sid="416926503964090" type="SpriteFont5">
                             <param id="0" name="Tag">&quot;add&quot;</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="766141921328623" type="homeplay">
-                            <param id="0" name="Instance variable">next</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="173973094106369">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="953452079033192" type="charlady2">
-                    <param id="0" name="Object">info1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Platform" id="11" name="Set enabled" sid="724010815491930" type="charlady2">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="977016748270214" type="System">
-                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="257922684793971" type="System">
-                    <param id="0" name="Seconds">3</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="364192163417387" type="System">
-                    <param id="0" name="Layer">&quot;infoPopup&quot;</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action behavior="Platform" id="11" name="Set enabled" sid="233954457381605" type="charlady2">
-                    <param id="0" name="State">1</param>
-                </action>
-            </actions>
         </event-block>
         <event-block sid="490433177570314">
             <conditions>
@@ -809,7 +798,7 @@
                             <param id="1" name="Visibility">1</param>
                         </action>
                         <action id="-16" name="Wait" sid="117013827697632" type="System">
-                            <param id="0" name="Seconds">1</param>
+                            <param id="0" name="Seconds">2.5</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="735052208932097" type="System">
                             <param id="0" name="Layer">&quot;quePopup&quot;</param>
@@ -831,7 +820,7 @@
                     <param id="0" name="Text">TextBox.Text=&quot;1091&quot;?&quot;Wow! you answered it right&quot; : &quot;Wrong Answer&quot;</param>
                 </action>
                 <action id="-16" name="Wait" sid="234082884360823" type="System">
-                    <param id="0" name="Seconds">1.3</param>
+                    <param id="0" name="Seconds">1.5</param>
                 </action>
                 <action id="-4" name="Set layer visible" sid="141213874811717" type="System">
                     <param id="0" name="Layer">&quot;quePopup&quot;</param>
