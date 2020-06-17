@@ -13,8 +13,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Start Layout</layout>
         <layout order="2">Story Layout</layout>
         <layout order="4">Levels Layout</layout>
-        <layout active="1" order="7">1</layout>
-        <layout order="8">2</layout>
+        <layout order="7">1</layout>
+        <layout active="1" order="8">2</layout>
         <event-sheet order="1">Start Event Sheet</event-sheet>
         <event-sheet order="3">Story Event Sheet</event-sheet>
         <event-sheet order="5">Levels Event Sheet</event-sheet>
@@ -188,5 +188,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bottomfall/" />
         <folder expanded="1" path="animation-folder/info1/" />
         <folder expanded="1" path="animation-folder/queButton/" />
+        <folder expanded="1" path="animation-folder/tileBlue_/" />
+        <folder expanded="1" path="animation-folder/tileBlue_2/" />
     </folders-expanded>
 </c2uistate>

@@ -669,12 +669,13 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="929632043409425" speed="5">
-                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\Game\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_stand.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Images\kid1.png" />
                 </animation>
-                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="992648769387632" speed="8">
-                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\Game\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk1.png" />
-                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\Game\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk2.png" />
-                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\Game\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_walk3.png" />
+                <animation framecount="4" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="992648769387632" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Images\kid5.png" />
+                    <frame duration="1" hotspotX="0.503185" hotspotY="1" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Images\kid2.png" />
+                    <frame duration="1" hotspotX="0.502994" hotspotY="1" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Images\kid3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Images\kid4.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="264684488879351" speed="5">
                     <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="D:\Game\Platformer\Abstract Platformer\PNG\Players\Player Red\playerRed_up2.png" />
@@ -3218,6 +3219,42 @@
         </object-type>
         <object-type name="response" sid="118868789034185">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="tileBlue_" sid="199894834156597">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316188180952755" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_02.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.08" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.08" />
+                            <point x="1" y="0.5" />
+                            <point x="0.90625" y="0.88" />
+                            <point x="0.03125" y="0.96" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_2" sid="874942731956747">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234201460396344" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_07.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
