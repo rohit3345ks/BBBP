@@ -2758,7 +2758,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="l3" uid="81">
+                <!-- <instance type="l3" uid="81">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2779,7 +2779,7 @@
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
-                </instance>
+                </instance> -->
             </instances>
             <effects />
         </layer>

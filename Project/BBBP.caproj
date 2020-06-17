@@ -3303,7 +3303,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
         <object-type name="Moveahead" sid="385704770976982">
             <plugin id="Sprite" />
             <instance-variables>
@@ -3322,27 +3321,11 @@
                             <point x="0.5" y="0.947917" />
                             <point x="0.0978261" y="0.90625" />
                             <point x="0.0108696" y="0.5" />
-=======
-        <object-type name="l3" sid="875626451121459">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743662995304782" speed="5">
-                    <frame duration="1" hotspotX="0.504951" hotspotY="0.511628" original-source="C:\Users\rkrmt\OneDrive\Documents\GitHub\BBBP\Platformer\GUI\level select\l.png">
-                        <collision-poly>
-                            <point x="0.00990099" y="0.0232558" />
-                            <point x="0.49505" y="0.418605" />
-                            <point x="0.970297" y="0.0697674" />
-                            <point x="0.980198" y="0.488372" />
-                            <point x="0.960396" y="0.906977" />
-                            <point x="0.49505" y="0.976744" />
-                            <point x="0.029703" y="0.930233" />
->>>>>>> 3de57f694c1f5ebe5a5f2eca7919f3bfb0996f4e
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-<<<<<<< HEAD
         <object-type name="info2" sid="794481298957254">
             <plugin id="Sprite" />
             <animation-folder>
@@ -3437,8 +3420,6 @@
             </behaviors>
             <texture original-source="E:\ROHIT\B.Tech\Projects\Minor Project (BBBP Game)\Platformer\SpriteFont\SpriteFont_ComicSansMS_Bold_(20)_[0,0,0,0]_23x25.png" />
         </object-type>
-=======
->>>>>>> 3de57f694c1f5ebe5a5f2eca7919f3bfb0996f4e
     </object-folder>
     <families />
     <layout-folder>
