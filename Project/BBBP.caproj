@@ -653,9 +653,6 @@
         </object-type>
         <object-type name="playerRed_Stand" sid="355954579204369">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="heart" sid="372636024226318" type="number" />
-            </instance-variables>
             <behaviors>
                 <behavior-type name="Platform" sid="950411160818524">
                     <behavior id="Platform" />
@@ -2111,15 +2108,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641718803060162" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Enemies\enemyFloating_1.png">
-                        <collision-poly>
-                            <point x="0.0238095" y="0.025" />
-                            <point x="0.97619" y="0.025" />
-                            <point x="0.97619" y="0.975" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0238095" y="0.975" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.501502" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Images\enemypose2.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -2682,6 +2671,11 @@
         </object-type>
         <object-type name="tileGreen_84" sid="779989305434624">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="613314121911944">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="702223277580090" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Green tiles\tileGreen_26.png">
@@ -3292,6 +3286,242 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Window2" sid="851518497375882">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285998484288627" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="complete2" sid="726296337127289">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703374894602517" speed="0">
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\complete.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gameover.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0.00819672" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Restart2" sid="315501816827770">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424602655430768" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gui\button\Button_74.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gui\button\Button_77.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gui\button\Button_46.png" />
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gui\button\Button_49.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground19" sid="806676330448295">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="finalflag2" sid="106269892401734">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="211708492112078" speed="5">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.508197" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\Abstract Platformer\PNG\Other\flagGreen_up.png">
+                        <collision-poly>
+                            <point x="0.0338983" y="0.0327869" />
+                            <point x="0.491525" y="0.163934" />
+                            <point x="0.711864" y="0.278689" />
+                            <point x="0.135593" y="0.491803" />
+                            <point x="0.40678" y="0.42623" />
+                            <point x="0.491525" y="0.42623" />
+                            <point x="0.0169492" y="0.983607" />
+                            <point x="0" y="0.491803" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_3" sid="394983396241523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="458539415394701" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_24.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_25.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.859375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.703125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_4" sid="142250543517505">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="998600644629433">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="897045876020537" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_24.png">
+                        <collision-poly>
+                            <point x="0.0625" y="0.0625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_5" sid="655505807296902">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="857446508288712">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="788074502121086" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_25.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="0.859375" y="0.5" />
+                            <point x="0.640625" y="0.640625" />
+                            <point x="0.5" y="0.703125" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="info2" sid="220375356623369">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980998950708864" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gui\button\Button_66.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ques2" sid="304970725700848">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297217103879849" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gui\button\Button_70.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window3" sid="881950307845131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984237626913656" speed="0">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont7" sid="330365374486992">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\SpriteFont\SpriteFont_ComicSansMS_Bold_(20)_[0,0,0,0]_23x25.png" />
+        </object-type>
+        <object-type name="SpriteFont8" sid="726812357378583">
+            <plugin id="SpriteFontPlus" />
+            <texture original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\SpriteFont\SpriteFont_ComicSansMS_Bold_(20)_[0,0,0,0]_23x25.png" />
         </object-type>
     </object-folder>
     <families />
