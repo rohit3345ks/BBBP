@@ -450,10 +450,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-7</x>
+                        <x>-1.126533508</x>
                         <y>267</y>
                         <z>0</z>
-                        <width>64</width>
+                        <width>58.126533508</width>
                         <height>259</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -814,8 +814,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>648</x>
                         <y>232</y>
+=======
+                        <x>674.838195801</x>
+                        <y>204.668014526</y>
+>>>>>>> faa46d284acfe62cfc7bf362a6f17e9f4accb4b1
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -843,8 +848,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>706</x>
                         <y>232</y>
+=======
+                        <x>732.838195801</x>
+                        <y>203.668014526</y>
+>>>>>>> faa46d284acfe62cfc7bf362a6f17e9f4accb4b1
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -1570,7 +1580,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2474</x>
+                        <x>2468.135498047</x>
                         <y>319</y>
                         <z>0</z>
                         <width>64</width>
@@ -1655,8 +1665,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3105</x>
-                        <y>294</y>
+                        <x>3101.636962891</x>
+                        <y>293.161865234</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>
@@ -1903,7 +1913,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4262</x>
+                        <x>4256.955566406</x>
                         <y>319</y>
                         <z>0</z>
                         <width>64</width>
@@ -2319,8 +2329,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
+<<<<<<< HEAD
                         <x>674</x>
                         <y>174</y>
+=======
+                        <x>699.161865234</x>
+                        <y>145.828567505</y>
+>>>>>>> faa46d284acfe62cfc7bf362a6f17e9f4accb4b1
                         <z>0</z>
                         <width>42</width>
                         <height>40</height>
@@ -2439,8 +2454,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1618</x>
-                        <y>161</y>
+                        <x>1589.472167969</x>
+                        <y>134.989135742</y>
                         <z>0</z>
                         <width>64</width>
                         <height>38</height>
@@ -2777,7 +2792,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="l3" uid="81">
+                <!-- <instance type="l3" uid="81">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -2798,6 +2813,7 @@
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
+<<<<<<< HEAD
                 </instance>
                 <instance type="tileBlue_4" uid="90">
                     <properties>
@@ -3190,6 +3206,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+=======
+                </instance> -->
+>>>>>>> faa46d284acfe62cfc7bf362a6f17e9f4accb4b1
             </instances>
             <effects />
         </layer>

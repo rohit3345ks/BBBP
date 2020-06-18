@@ -22,6 +22,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -1408,6 +1409,13 @@
                         </collision-poly>
                     </frame>
                 </animation>
+                <animation framecount="5" loop="0" name="hit" pingpong="0" repeatcount="1" repeatto="0" sid="202407430305172" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.502825" />
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Images\ladypunch2.png" />
+                    <frame duration="1" hotspotX="0.506024" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Images\ladypunch3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Images\ladypunch.png" />
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.502825" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Images\level1pos1 - Copy.png" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="tileGreen_27" sid="263016600397953">
@@ -1733,6 +1741,9 @@
                 <behavior-type name="Jumpthru" sid="801090412742968">
                     <behavior id="jumpthru" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="203736320463585">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="114496705553481" speed="5">
@@ -1754,6 +1765,9 @@
             <behaviors>
                 <behavior-type name="Jumpthru" sid="610600171460168">
                     <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="435913603235796">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1778,6 +1792,9 @@
                 <behavior-type name="Jumpthru" sid="255456699082423">
                     <behavior id="jumpthru" />
                 </behavior-type>
+                <behavior-type name="Solid" sid="604740813386469">
+                    <behavior id="solid" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102837460941793" speed="5">
@@ -1800,6 +1817,9 @@
             <behaviors>
                 <behavior-type name="Jumpthru" sid="665430179405742">
                     <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="324430168819209">
+                    <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -1957,6 +1977,9 @@
                 <behavior-type name="Flash" sid="252087945777413">
                     <behavior id="Flash" />
                 </behavior-type>
+                <behavior-type name="Fade" sid="631578257631991">
+                    <behavior id="Fade" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="661289772747653" speed="5">
@@ -2106,9 +2129,14 @@
         </object-type>
         <object-type name="enemyFloating_2" sid="656005055024059">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="977281498223183">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641718803060162" speed="5">
-                    <frame duration="1" hotspotX="0.501502" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Images\enemypose2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Images\enemy2correct.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -3191,9 +3219,17 @@
         </object-type>
         <object-type name="TextBox" sid="689741862700976">
             <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable name="answer1" sid="841676119427183" type="number" />
+                <instance-variable name="answer2" sid="683266801006850" type="number" />
+                <instance-variable name="answer3" sid="911669251773182" type="string" />
+            </instance-variables>
         </object-type>
         <object-type name="queButton" sid="999838972494654">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="This value is for answer of first question" name="ans1" sid="205996562860941" type="boolean" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577700438333254" speed="5">
                     <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Platformer\GUI\gui\button\Button_70.png">
@@ -3269,19 +3305,24 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="l3" sid="875626451121459">
+        <object-type name="Moveahead" sid="385704770976982">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="usable" sid="255786917341164" type="boolean" />
+            </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743662995304782" speed="5">
-                    <frame duration="1" hotspotX="0.504951" hotspotY="0.511628" original-source="C:\Users\rkrmt\OneDrive\Documents\GitHub\BBBP\Platformer\GUI\level select\l.png">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="665060726478795" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Platformer\GUI\gui\button\Button_45.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Platformer\GUI\gui\button\Button_43.png">
                         <collision-poly>
-                            <point x="0.00990099" y="0.0232558" />
-                            <point x="0.49505" y="0.418605" />
-                            <point x="0.970297" y="0.0697674" />
-                            <point x="0.980198" y="0.488372" />
-                            <point x="0.960396" y="0.906977" />
-                            <point x="0.49505" y="0.976744" />
-                            <point x="0.029703" y="0.930233" />
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -3329,6 +3370,20 @@
                             <point x="0.498911" y="0.606557" />
                             <point x="0.043573" y="0.836066" />
                             <point x="0.0784314" y="0.5" />
+        <object-type name="info2" sid="794481298957254">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330696956645890" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\Projects\Minor Project (BBBP Game)\BBBP - 1\BBBP\Platformer\GUI\gui\button\Button_67.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -3385,6 +3440,23 @@
                             <point x="0.491525" y="0.42623" />
                             <point x="0.0169492" y="0.983607" />
                             <point x="0" y="0.491803" />
+        <object-type name="queButton4" sid="903044922090410">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="This value is for answer of first question" name="ans1" sid="561176230500932" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="271163324480670" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Platformer\GUI\gui\button\Button_70.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -3485,6 +3557,11 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="297217103879849" speed="5">
                     <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\GUI\gui\button\Button_70.png">
+        <object-type name="info3" sid="302012064119012">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417531589105059" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\Projects\Minor Project (BBBP Game)\BBBP - 1\BBBP\Platformer\GUI\gui\button\Button_67.png">
                         <collision-poly>
                             <point x="0.0752688" y="0.0729167" />
                             <point x="0.494624" y="0.0104167" />
@@ -3510,6 +3587,23 @@
                             <point x="0.985075" y="0.0210773" />
                             <point x="0.980099" y="0.971897" />
                             <point x="0.0165837" y="0.976581" />
+        <object-type name="queButton5" sid="587175915280408">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable comment="This value is for answer of first question" name="ans1" sid="424929019223200" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="598133957000670" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="E:\ROHIT\B.Tech\B.Tech_Sem_6\Minor Project (BBBP Game)\BBBP\Platformer\GUI\gui\button\Button_70.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -3522,6 +3616,17 @@
         <object-type name="SpriteFont8" sid="726812357378583">
             <plugin id="SpriteFontPlus" />
             <texture original-source="C:\Users\vaio\Desktop\folder\BBBP\BBBP\Platformer\SpriteFont\SpriteFont_ComicSansMS_Bold_(20)_[0,0,0,0]_23x25.png" />
+        <object-type name="SpriteFontque" sid="596044176121278">
+            <plugin id="SpriteFontPlus" />
+            <instance-variables>
+                <instance-variable name="sText" sid="423086963295367" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Timer" sid="429642087562117">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="E:\ROHIT\B.Tech\Projects\Minor Project (BBBP Game)\Platformer\SpriteFont\SpriteFont_ComicSansMS_Bold_(20)_[0,0,0,0]_23x25.png" />
         </object-type>
     </object-folder>
     <families />
